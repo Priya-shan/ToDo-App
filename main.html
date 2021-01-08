@@ -6,7 +6,6 @@
   <title>ToDo List</title>
   <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f200350c93.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/all.css">
   
      
@@ -328,12 +327,12 @@ function removefn(e){
     }
 }
 function removeFromStorage(liitem){
-    console.log('entered removefromstorage fn');
+    
     itemsArray.forEach(function(singleElement,index){
-       console.log(singleElement,index); 
+        
         if(liitem.textContent===singleElement){
             itemsArray.splice(index,1);
-            console.log(itemsArray);
+            
         }
     });
     localStorage.setItem('items',JSON.stringify(itemsArray));
